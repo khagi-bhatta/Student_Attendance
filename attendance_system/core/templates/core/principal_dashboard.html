@@ -1,0 +1,42 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Principal Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Welcome Principal </h1>
+        <nav>
+            <a href="{% url 'logout' %}" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="dashboard-summary">
+            <div class="card">
+                <h2>Departments</h2>
+                <p>Manage your departments and HODs here.</p>
+                <a href="#" class="btn">View Departments</a>
+            </div>
+
+            <div class="card">
+                <h2>Reports</h2>
+                <p>Access reports about attendance and faculty.</p>
+                <a href="#" class="btn">View Reports</a>
+            </div>
+
+            <div class="card">
+                <h2>Settings</h2>
+                <p>Update your profile and system settings.</p>
+                <a href="#" class="btn">Settings</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
